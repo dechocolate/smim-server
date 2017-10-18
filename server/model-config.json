@@ -1,0 +1,63 @@
+{
+	"_meta": {
+		"sources": [
+			"loopback/common/models",
+			"loopback/server/models",
+			"../common/models",
+			"./models"
+		],
+		"mixins": [
+			"loopback/common/mixins",
+			"loopback/server/mixins",
+			"../common/mixins",
+			"./mixins"
+		]
+	},
+	"User": {
+		"dataSource": "db",
+		"public": false
+	},
+	"user": {
+		"dataSource": "db",
+		"public": true
+	},
+	"AccessToken": {
+		"dataSource": "db",
+		"public": false
+	},
+	"ACL": {
+		"dataSource": "db",
+		"public": false
+	},
+	"RoleMapping": {
+		"dataSource": "db",
+		"public": false,
+		"options": {
+			"strictObjectIDCoercion": true
+		}
+	},
+	"Role": {
+		"dataSource": "db",
+		"public": false
+	},
+	"Todo": {
+		"dataSource": "db",
+		"public": true
+	},
+	"Message": {
+		"dataSource": "db",
+		"public": true
+	},
+	"Room": {
+		"dataSource": "db",
+		"public": true
+	},
+	"Report": {
+		"dataSource": "db",
+		"public": true
+	},
+	"Image": {
+		"dataSource": "db",
+		"public": true
+	}
+}

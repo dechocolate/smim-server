@@ -1,0 +1,24 @@
+{
+	"name": "user",
+	"plural": "users",
+	"base": "User",
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"available": {
+			"type": "boolean",
+			"required": true,
+			"default": true
+		},
+		"created": {
+			"type": "date",
+			"required": true,
+			"defaultFn": "now"
+		}
+	},
+	"validations": [],
+	"relations": {},
+	"acls": [],
+	"methods": {}
+}
