@@ -39,11 +39,7 @@
 	"Role": {
 		"dataSource": "db",
 		"public": false
-	},
-	"Todo": {
-		"dataSource": "db",
-		"public": true
-	},
+	},	
 	"Message": {
 		"dataSource": "db",
 		"public": true
