@@ -6,6 +6,30 @@
 		"validateUpsert": true
 	},
 	"properties": {
+		"name": {
+			"type": "string",
+			"required": false
+		},
+		"gender": {
+			"type": "string",
+			"required": false
+		},
+		"birth": {
+			"type": "string",
+			"required": false
+		},
+		"intro": {
+			"type": "string",
+			"required": false
+		},
+		"thumbnail": {
+			"type": "string",
+			"required": false
+		},
+		"point": {
+			"type": "number",
+			"required": false
+		},
 		"available": {
 			"type": "boolean",
 			"required": true,
