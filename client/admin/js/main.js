@@ -22,12 +22,12 @@ app.directive('dashboardSummary', require('./dashboard/dashboardSummary'));
 // app.directive('zoomInModal', require('./products/zoomInModal'));
 
 // custom controllers
-app.controller('username', ['$scope', '$window', function($scope, $window) { // used in header.html
-    $scope.username =  $window.localStorage.getItem('email');	
-}]);
+// app.controller('username', ['$scope', '$window', function($scope, $window) { // used in header.html
+//     $scope.username =  $window.localStorage.getItem('email');	
+// }]);
 
 // custom states (pages)
-app.config(['$stateProvider', require('./segments/segmentsState')]);
+// app.config(['$stateProvider', require('./segments/segmentsState')]);
 
 app.config(['NgAdminConfigurationProvider', function (nga) {
     
