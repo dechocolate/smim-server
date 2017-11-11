@@ -10,9 +10,9 @@ export default function (nga, admin) {
 		.sortField('created')
         .sortDir('ASC')
 		.perPage(30) 
-        .title('구인자 목록')
+        .title('사용자 목록')
         .fields([
-			nga.field('id').isDetailLink(true).label('구인자 코드'),
+			nga.field('id').isDetailLink(true).label('사용자 코드'),
             nga.field('email').label('이메일'),
 			nga.field('companyCEO').label('대표명'),
 			nga.field('companyName').label('상호명'),
@@ -29,9 +29,9 @@ export default function (nga, admin) {
 	 *   VIEW
 	**/
 	model.showView()
-	.title('구인자 조회')
+	.title('사용자 조회')
 	.fields([
-		nga.field('id').isDetailLink(true).label('구인자 코드'),
+		nga.field('id').isDetailLink(true).label('사용자 코드'),
 		nga.field('email').label('이메일'),
 		nga.field('companyCEO').label('대표명'),
 		nga.field('companyName').label('상호명'),
@@ -48,7 +48,7 @@ export default function (nga, admin) {
 	 *   CREATE
 	**/
 	model.creationView()
-	.title('구인자 생성')
+	.title('사용자 생성')
 	.fields([            
 		nga.field('email').label('이메일'),
 		nga.field('password', 'password').label('패스워드'),
@@ -62,7 +62,7 @@ export default function (nga, admin) {
 	 *   EDIT
 	**/
 	model.editionView()
-	.title('구인자 수정')
+	.title('사용자 수정')
 	.fields(
 		nga.field('id').label('코드').editable(false),
 		nga.field('email').label('이메일').editable(false),
