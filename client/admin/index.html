@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>whyme cms</title>
+	<style type="text/css">
+		.ng-admin-entity-posts .ng-admin-column-title {
+			width: 400px;
+		}
+	</style>
+</head>
+
+<body ng-app="app">
+	<div ui-view="ng-admin"></div>
+	<script type="text/javascript">
+		var username = window.localStorage.getItem('token');
+		if (!username) {
+			window.location.href = "./login.html";
+		}
+		function logout() {
+			window.localStorage.removeItem('token');
+			window.localStorage.removeItem('email');
+			window.location.href = "./login.html";
+		}
+	</script>
+</body>
+
+</html>

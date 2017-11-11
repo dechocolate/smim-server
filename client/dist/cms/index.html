@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><link href="../main.css?eef24c00ed1506913450" rel="stylesheet"></head><head><meta charset=utf-8><title>whyme cms</title><style type=text/css>.ng-admin-entity-posts .ng-admin-column-title {
+			width: 400px;
+		}</style><body ng-app=app><div ui-view=ng-admin></div><script type=text/javascript>var username = window.localStorage.getItem('token');
+		if (!username) {
+			window.location.href = "./login.html";
+		}
+		function logout() {
+			window.localStorage.removeItem('token');
+			window.localStorage.removeItem('email');
+			window.location.href = "./login.html";
+		}</script><script type="text/javascript" src="../main.js?eef24c00ed1506913450"></script>
