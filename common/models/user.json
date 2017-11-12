@@ -1,6 +1,5 @@
 {
 	"name": "user",
-	"plural": "users",
 	"base": "User",
 	"options": {
 		"validateUpsert": true
@@ -28,21 +27,39 @@
 		},
 		"point": {
 			"type": "number",
-			"required": false
+			"required": false,
+			"default": 210
 		},
 		"available": {
 			"type": "boolean",
 			"required": true,
 			"default": true
 		},
+		"leave": {
+			"type": "boolean",
+			"required": true,
+			"default": false
+		},
 		"created": {
 			"type": "date",
 			"required": true,
 			"defaultFn": "now"
+		},
+		"lastLogin": {
+			"type": "date",
+			"required": false
 		}
 	},
 	"validations": [],
 	"relations": {},
-	"acls": [],
+	"acls": [		
+		{
+			"accessType": "*",
+			"principalType": "ROLE",
+			"principalId": "super",
+			"permission": "ALLOW",
+			"property": "*"
+		}
+	],
 	"methods": {}
 }

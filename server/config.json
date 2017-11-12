@@ -2,6 +2,17 @@
   "restApiRoot": "/api",
   "host": "0.0.0.0",
   "port": 3001,
+  "db_host": "127.0.0.1",
+  "db_port": 27000,
+  "db_database": "smim",
+  "db_username": "smim",
+  "db_password": "smim123",
+  "db_name": "db",
+  "db_connector": "mongodb",
+  "redis_host": "askstory.com",
+  "redis_port": "6379",
+  "redis_auth_pass": "ondomyTheoneblue1201",
+  "redis_debug": false,
   "remoting": {
     "context": false,
     "rest": {

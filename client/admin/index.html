@@ -14,10 +14,10 @@
 <body ng-app="app">
 	<div ui-view="ng-admin"></div>
 	<script type="text/javascript">
-		// var username = window.localStorage.getItem('token');
-		// if (!username) {
-		// 	window.location.href = "./login.html";
-		// }
+		var username = window.localStorage.getItem('token');		
+		if (!username) {
+			window.location.href = "./login.html";
+		}
 		function logout() {
 			window.localStorage.removeItem('token');
 			window.localStorage.removeItem('email');

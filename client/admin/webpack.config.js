@@ -27,7 +27,7 @@ module.exports = {
 				// 'NODE_ENV': JSON.stringify('development'),
 				'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
 				'API_URL': JSON.stringify('http://localhost:3001/api/'),
-				'FILE_URL': JSON.stringify('http://dashboard.whyme.co.kr')
+				'FILE_URL': JSON.stringify('http://localhost:3001')
 			}
 		}),
 		new ExtractTextPlugin('[name].css', {
@@ -37,13 +37,13 @@ module.exports = {
 			template: path.join(__dirname, 'index.html'),
 			inject: true,
 			hash: true,
-			filename: 'cms/index.html',
+			filename: 'index.html',
 		}),
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, 'login.html'),
 			inject: true,
 			hash: true,
-			filename: 'cms/login.html',
+			filename: 'login.html',
 		}),
 	],
 	externals: {

@@ -1,59 +1,63 @@
 {
-	"_meta": {
-		"sources": [
-			"loopback/common/models",
-			"loopback/server/models",
-			"../common/models",
-			"./models"
-		],
-		"mixins": [
-			"loopback/common/mixins",
-			"loopback/server/mixins",
-			"../common/mixins",
-			"./mixins"
-		]
-	},
-	"User": {
-		"dataSource": "db",
-		"public": false
-	},
-	"user": {
-		"dataSource": "db",
-		"public": true
-	},
-	"AccessToken": {
-		"dataSource": "db",
-		"public": false
-	},
-	"ACL": {
-		"dataSource": "db",
-		"public": false
-	},
-	"RoleMapping": {
-		"dataSource": "db",
-		"public": false,
-		"options": {
-			"strictObjectIDCoercion": true
-		}
-	},
-	"Role": {
-		"dataSource": "db",
-		"public": false
-	},	
-	"Message": {
-		"dataSource": "db",
-		"public": true
-	},
-	"Room": {
-		"dataSource": "db",
-		"public": true
-	},
-	"Report": {
-		"dataSource": "db",
-		"public": true
-	},
-	"Image": {
-		"dataSource": "db",
-		"public": true
-	}
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },  
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "user": {
+    "dataSource": "db",
+    "public": true
+  },  
+  "admin": {
+    "dataSource": "db",
+    "public": true
+  },
+  "message": {
+    "dataSource": "db",
+    "public": true
+  },
+  "room": {
+    "dataSource": "db",
+    "public": true
+  },
+  "report": {
+    "dataSource": "db",
+    "public": true
+  },
+  "image": {
+    "dataSource": "db",
+    "public": true
+  }
 }

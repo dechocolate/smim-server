@@ -1,6 +1,6 @@
 {
-  "name": "room",
-  "base": "PersistedModel",
+  "name": "admin",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -8,6 +8,8 @@
   "properties": {},
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+	  
+  ],
   "methods": {}
 }

@@ -1,6 +1,38 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  }
+	"db": {
+		"host": "${db_host}",
+		"port": "${db_port}",
+		"database": "${db_database}",
+		"username": "${db_username}",
+		"password": "${db_password}",
+		"name": "db",
+		"connector": "${db_connector}",
+		"allowExtendedOperators": true
+	},
+	"amazonS3": {
+		"name": "amazonS3",
+		"connector": "loopback-component-storage",
+		"provider": "amazon",
+		"key": "UuZsUsHJulArbiTeBhtjTpFqewrbbqAaX56yz168",
+		"keyId": "AKIAJNXXWJFJBNLKDQFQ"
+	},
+	"emailDs": {
+		"name": "emailDs",
+		"connector": "mail",
+		"transports": [
+			{
+				"type": "smtp",
+				"host": "smtp.gmail.com",
+				"secure": true,
+				"port": 465,
+				"tls": {
+					"rejectUnauthorized": false
+				},
+				"auth": {
+					"user": "whyme.co.kr@gmail.com",
+					"pass": "bizmyhand"
+				}
+			}
+		]
+	}
 }
