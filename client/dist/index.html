@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<base href="/">
-	<title>WHY ME</title>
-<link href="styles.13977e036d380d69e2fb.bundle.css" rel="stylesheet"/></head>
-<body>
-	<app-root></app-root>
-<script type="text/javascript" src="inline.631ee90eea808b40fcc1.bundle.js"></script><script type="text/javascript" src="polyfills.dc8b4213b07c7b5c0a10.bundle.js"></script><script type="text/javascript" src="scripts.aaa38df5a8587815d526.bundle.js"></script><script type="text/javascript" src="vendor.c6b5f8d8f3419427c324.bundle.js"></script><script type="text/javascript" src="main.e8a554d4be647912ddfd.bundle.js"></script></body>
-</html>
+<!DOCTYPE html><html><head><link href="main.css?b22e52398f4ba9a38a72" rel="stylesheet"></head><head><meta charset=utf-8><title>SMIM CMS</title><style type=text/css>.ng-admin-entity-posts .ng-admin-column-title {
+			width: 400px;
+		}</style><body ng-app=app><div ui-view=ng-admin></div><script type=text/javascript>var username = window.localStorage.getItem('token');		
+		if (!username) {
+			window.location.href = "./login.html";
+		}
+		function logout() {
+			window.localStorage.removeItem('token');
+			window.localStorage.removeItem('email');
+			window.location.href = "./login.html";
+		}</script><script type="text/javascript" src="main.js?b22e52398f4ba9a38a72"></script>
